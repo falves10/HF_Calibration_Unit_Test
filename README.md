@@ -8,6 +8,7 @@ Verify if any runs for the crate you intend to use are being taken.
 If it is available:
 Choose the "key name": HF pulser study, sets up the number of events and mask the necessary crate.
 Start to take runs.
+
 -> The runs taken are stored at the 904 cluster. 
 
 # Step 2: Build inside the work space area a CMSSW version (verify which one)
