@@ -18,7 +18,7 @@ cd CMSSW version/src
 
 cmsenv
 
--> Copy the ngHCAL folder from this repository at github to the src folder. (Add more info here)
+-> Copy the ngHCAL folder from this repository at github to the src folder. 
 
 # Step 3: Update the runs
 Once work area is set up, go to the folder "../src/ngHCAL/QIE10_Testing/bin", open the file "update_runs" and change your work space path before run it.
