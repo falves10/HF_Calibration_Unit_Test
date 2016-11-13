@@ -11,7 +11,7 @@ Start to take runs.
 
 -> The runs taken are stored at the 904 cluster. 
 
-# Step 2: Build inside the work space area a CMSSW version (verify which one)
+# Step 2: Build into the work space area a CMSSW version (verify which one)
 cmsrel CMSSW version
 cd CMSSW version/src
 cmsenv
