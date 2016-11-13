@@ -10,37 +10,33 @@ Choose the "key name": HF pulser study, sets up the number of events and mask th
 Start to take runs.
 -> The runs taken are stored at the 904 cluster. 
 
-# Step 2: Update the runs
-Once the runs were taken, one needs to upload them to the work area in the lxplus to analyze. For this, it is necessary to set up in the work area. There, inside the 
-
-
-
-
-a CMSSW version (verify the current):
-
+# Step 2: Build inside the work space area a CMSSW version (verify which one)
 cmsrel CMSSW version
 cd CMSSW version/src
 cmsenv
 
+-> Copy the ngHCAL folder from this repository at github to the src folder. (Add more info here)
 
--> Copy the ngHCAL folder from this repository to the src folder. (Add more info here)
+# Step 3: Update the runs
+Once work area is set up, go to the folder "../src/ngHCAL/QIE10_Testing/bin", open the file "update_runs" and change your work space path before run it.
+After this change, save the code and run the command: ./update_runs 
+The runs will be stored in the public folder inside the work space area.
 
 
+# Step 4: Analyze the runs
+After the runs have been uploaded to the lxplus area, the next step is analyze them. That is done using the python code "QIE10_testing.py". The command used is:
 
+cmsRun QIE10_testing.py # run number and number of suite (from the  QIE10_testing.info) # 
 
-# In the folder "bin" (path: ../ngHCAL/bin/), there is a file called "update_runs"
-This file upload runs taken from the servidor at 904 for the lxplus area.
-To run this code, you need to do: ./update_runs
-The files copied to Lxplus are stored in the folder called "dat" (path: ../ngHCAL/QIE10_Testing/dat/)
+-> As an example, one has a data root file called: B904_Integration_'+runNumber+'.root'. 
 
-# Step 3: Analyze the runs
-After the runs have been uploaded to the lxplus area, the next step is analyze them. That is done using the python code "QIE10_testing.py". The command should be run is:
-
-cmsRun QIE10_testing.py #number of the run and number of suite (from the  QIE10_testing.info) # 
-
--> As an example, one has a data root file called: QIE10testing_1000022166_7.root. You can analyze it doing:
+You can analyze it doing:
 
 cmsRun QIE10_testing.py 1000022166 7
+
+As a result, the analized file will be stored inside the dat folder under the path: "../ngHCAL/QIE10_Testing/dat" with the name "QIE10testing_1000022166_7.root" .
+
+Observation: The suite number has to do with which study will be performed. In our case, pulser studies, then the suite number is 7.
 
 # In the folder "dat" (path: ../ngHCAL/QIE10_Testing/dat/), there is a file called "plot_maker_newversion.cpp"
 This file is used to make plots from the data files (root files) stored in the same folder.
