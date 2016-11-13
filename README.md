@@ -13,7 +13,9 @@ Start to take runs.
 
 # Step 2: Build into the work space area a CMSSW version (verify which one)
 cmsrel CMSSW version
+
 cd CMSSW version/src
+
 cmsenv
 
 -> Copy the ngHCAL folder from this repository at github to the src folder. (Add more info here)
