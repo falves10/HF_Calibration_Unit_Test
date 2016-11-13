@@ -23,6 +23,7 @@ cmsenv
 # Step 3: Update the runs
 Once work area is set up, go to the folder "../src/ngHCAL/QIE10_Testing/bin", open the file "update_runs" and change your work space path before run it.
 After this change, save the code and run the command: ./update_runs 
+
 The runs will be stored in the public folder inside the work space area.
 
 
