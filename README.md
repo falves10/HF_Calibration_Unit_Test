@@ -51,7 +51,7 @@ In principle, you should start changing the "run number" in the beginning of the
 
 ----> int runs = {22798};
 
-The "run number" cab be identified in the root file name that one intends to run over like this: QIE10testing_1000022798_7.root
+The "run number" can be identified in the root file name that one intends to run over like this: QIE10testing_1000022798_7.root
 
 Then, if you want the plots be saved in other formats just add it as was added for the PDF format.
 
