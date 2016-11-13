@@ -44,6 +44,7 @@ Observation: The suite number has to do with which study will be performed. In o
 
 # Step 5: Run the plot maker code over the analyzed root files
 In the folder "dat" (path: ../ngHCAL/QIE10_Testing/dat/), there is a file called "plot_maker_newversion.cpp" .
+
 This file is used to make plots from the data files (root files) stored in the same folder.
 In the file, you can locate three big blocks of the code in the following order with the comments: " RMS(IC)/Mean(IC) vs Bias Voltage",  " LED A + LED B / LED(AB) " and "INTEGRATED CHARGED VS BIAS VOLTAGE". Each name refers to one kind of test performed with the pulser mezzanine cards.
 In principle, you should start changing the "run number" in the beginning of the file. More precisely, this line:
